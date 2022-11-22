@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+html, body, p{ 
+	margin:0; 
+	padding:0; 
+}
+
+header{
+    height:800px;
+    color:white;
+    background-color:white;
+    background-image:url(./resources/images/photos/image-header.jpg);
+    background-size: auto 100%;
+    background-position:center;
+    margin:0;
+    .haut{
+        padding:5vw;
+        display:flex;
+        justify-content:space-between;
+        ul{
+            display:none;
+        }
+    }
+    h1{
+        text-align: center;
+        font-family: Fraunces, serif;
+        font-size: 4em;
+        padding-top: 10vw;
+    }
+    .arrow{
+        display:block;
+        margin:auto;
+        
+    }
+}
