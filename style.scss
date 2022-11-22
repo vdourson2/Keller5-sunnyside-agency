@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
+
 html, body{ 
 	margin:0; 
 	padding:0; 
@@ -25,7 +26,8 @@ header{
     h1{
         text-align: center;
         font-family: Fraunces, serif;
-        font-size: 4em;
+        font-size: 3em;
+        letter-spacing: 6.25px;
         padding-top: 10vw;
     }
     .arrow{
@@ -49,11 +51,107 @@ header{
     h2{
         font-family:Fraunces, serif;
         font-size:3em;
+        color:#24303E;
     }
     p{
-        font-family:Barlow, 'Times New Roman', Times, serif;
+        font-family:Barlow, serif;
+        font-size:1.4em;
+        letter-spacing:-0.12;
+        line-height: 33px;
+        color:#808397;
     }
     .lien{
+        font-family:Fraunces, serif;
+        font-size:1.4em;
         text-transform: uppercase;
+        line-height: 100px;
+        color:#24303E;
+    }
+}
+
+.photo_texte{
+    text-align:center;
+    .bloc_texte_image1{
+        height:730px;
+        background-image:url(./resources/images/photos/image-graphic-design-cerises.jpg);
+        background-position:center;
+        background-size : cover;
+        color: #24554A;
+        h3{
+            font-family:Fraunces, serif;
+            font-size:(28/16)*1em;  
+            padding-top:500px;  
+            margin:0;
+        }
+        p{
+            padding-left:30px;
+            padding-right:30px;
+            font-family: Barlow,serif;
+            font-size:1em;
+            line-height: (27/16)*1em;
+            letter-spacing:-0.11;
+        }
+
+    }
+    .bloc_texte_image2{
+        height:730px;
+        background-image:url(./resources/images/photos/image-photography-mandarine.jpg);
+        background-position:center;
+        background-size : cover;
+        color:#19536C;
+        h3{
+            font-family:Fraunces, serif;
+            font-size:(28/16)*1em;  
+            padding-top:500px;  
+            margin:0;
+        }
+        p{
+            padding-left:30px;
+            padding-right:30px;
+            font-family: Barlow,serif;
+            font-size:1em;
+            line-height: (27/16)*1em;
+            letter-spacing:-0.11;
+        }
+
+    }
+}
+
+.photo{
+    width:72px;
+    border-radius: 36px;
+}
+
+.testimonials{
+    text-align:center;
+    h4{
+        font-family:Fraunces, serif;
+        text-transform: uppercase;
+        color: #A7AAAD;
+        letter-spacing: 4px;
+        padding:45px;
+    }
+    p{
+        color: #5B636D;
+        font-family: Barlow,serif;
+        font-size: 18px;
+        line-height: 2em;
+        letter-spacing: -0.12px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .nom{
+        color: #24303E;
+        font-family:Fraunces, serif;
+        font-size:(18/16)*1em;
+        margin:0px;
+        padding:0px;
+    }
+    .fonction{
+        font-family: Barlow,serif;
+        font-size:(14/16)*1em;
+        color: #A7AAAD;
+        padding:0px;
+        margin:0px 0px 45px 0px;
     }
 }
