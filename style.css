@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap");
-html, body, p {
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -30,4 +31,27 @@ header h1 {
 header .arrow {
   display: block;
   margin: auto;
+  height: 150px;
+}
+
+.bloc_image {
+  width: 100vw;
+}
+.bloc_image img {
+  width: 100%;
+}
+
+.bloc_texte {
+  padding: 10vw 5vw 10vw 5vw;
+  text-align: center;
+}
+.bloc_texte h2 {
+  font-family: Fraunces, serif;
+  font-size: 3em;
+}
+.bloc_texte p {
+  font-family: Barlow, "Times New Roman", Times, serif;
+}
+.bloc_texte .lien {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
