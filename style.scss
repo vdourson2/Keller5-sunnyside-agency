@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
+//outil de vérification Virginie : border:1px solid black;
 
 html, body{ 
 	margin:0; 
 	padding:0; 
-}
+    }
 
 header{
     height:800px;
@@ -153,5 +154,42 @@ header{
         color: #A7AAAD;
         padding:0px;
         margin:0px 0px 45px 0px;
+    }
+}
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    .bloc_image{
+        width:50vw;
+        img{
+            display:block;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    color: #458D7E;
+    background-color:#90D4C6;
+    .logo{
+        img{
+        margin:60px;
+        width:170px;
+        }
+    }
+    .menu_footer{
+        display:flex;
+        justify-content:space-around;
+        font-family: Barlow,serif;
+        font-weight: 600;
+    }
+    table{
+        margin:auto;
+        font-size:(18/16)*1em;
+        padding:60px;
+        td{
+            padding: 10px;
+        }
     }
 }

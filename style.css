@@ -149,4 +149,39 @@ header .arrow {
   color: #A7AAAD;
   padding: 0px;
   margin: 0px 0px 45px 0px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .bloc_image {
+  width: 50vw;
+}
+.gallery .bloc_image img {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  color: #458D7E;
+  background-color: #90D4C6;
+}
+footer .logo img {
+  margin: 60px;
+  width: 170px;
+}
+footer .menu_footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: Barlow, serif;
+  font-weight: 600;
+}
+footer table {
+  margin: auto;
+  font-size: 1.125em;
+  padding: 60px;
+}
+footer table td {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
