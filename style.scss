@@ -1,37 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
-//outil de vérification Virginie : border:1px solid black;
-
 html, body{ 
 	margin:0; 
 	padding:0; 
     }
 
 header{
-    height:800px;
+    height:1000px;
     color:white;
     background-color:white;
     background-image:url(./resources/images/photos/image-header.jpg);
     background-size: auto 100%;
     background-position:center;
     margin:0;
+    
     .haut{
-        padding:5vw;
+        padding:50px;
         display:flex;
         justify-content:space-between;
-        ul{
-            display:none;
+        .logo{
+            height:6vw;
+            max-height:50px;
+        }
+        .menu{
+            display: none;
+        }
+        .hamb{
+            height:20px;
         }
     }
     h1{
         text-align: center;
         font-family: Fraunces, serif;
-        font-size: 3em;
+        font-size: (40/16)*1em;
+        text-transform: uppercase;
         letter-spacing: 6.25px;
-        padding-top: 10vw;
+        padding-top: 100px;
     }
     .arrow{
+        padding:50px;
         display:block;
         margin:auto;
         height: 150px;
@@ -42,23 +50,23 @@ header{
     width:100vw;
     img{
     width:100%;
+    display:block;
     }
 }
 
 .bloc_texte{
-    //width:100vw;
-    padding: 10vw 5vw 10vw 5vw;
+    padding: 5vw 5vw 5vw 5vw;
     text-align: center;
     h2{
         font-family:Fraunces, serif;
-        font-size:3em;
+        font-size:(40/16)*1em;
         color:#24303E;
     }
     p{
         font-family:Barlow, serif;
-        font-size:1.4em;
+        font-size:1.5em;
         letter-spacing:-0.12;
-        line-height: 33px;
+        line-height: (33/16)*1em;
         color:#808397;
     }
     .lien{
@@ -92,7 +100,6 @@ header{
             line-height: (27/16)*1em;
             letter-spacing:-0.11;
         }
-
     }
     .bloc_texte_image2{
         height:730px;
@@ -114,7 +121,6 @@ header{
             line-height: (27/16)*1em;
             letter-spacing:-0.11;
         }
-
     }
 }
 
@@ -160,9 +166,10 @@ header{
 .gallery{
     display:flex;
     flex-wrap: wrap;
-    .bloc_image{
+    .bloc_image_gallery{
         width:50vw;
         img{
+            width:50vw;
             display:block;
         }
     }
@@ -192,4 +199,108 @@ footer{
             padding: 10px;
         }
     }
+}
+
+/*Affichage desktop*/
+@media screen and (min-width:1024px) {
+    header .haut {
+        .menu{
+            display:flex;
+            justify-content: space-evenly;
+            font-family:Barlow, serif;
+            width:600px;
+            font-size:(18/16)*1em;
+            //margin-top:5px;
+            .about, .services, .projects{
+                padding:1vw;
+            }
+            .contact{
+                width:100px;
+                border-radius: 30px;
+                padding:1vw;
+                background-color: white;
+                color:black;
+                font-family:Fraunces, serif;
+                text-transform:uppercase;
+                text-align: center;
+                &:hover{
+                    cursor: pointer;
+                    color:white;
+                    background-color:rgba(255,255,255,0.25);
+                }
+            }
+        }
+        .hamb{
+            display:none;
+        }
+    }
+    header h1{
+        font-size:(56/16)*1em;
+        letter-spacing: 8.75px;
+        }
+    
+    
+    .transform{
+        display:flex;
+        flex-direction: row-reverse;
+        .bloc_image{
+            width:50vw;
+            img{
+                width:50vw;
+                display: block;
+            }
+        }
+        .bloc_texte{
+            width:50vw;
+            padding: 10vw 5vw 5vw 10vw;
+            text-align: left;
+            .lien{
+                text-decoration: underline;
+                text-decoration-color:rgba(250,212,0,0.4);
+                text-decoration-style: solid;
+                text-decoration-thickness:0.4em;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration-color:rgba(250,212,0,1);
+                }
+            }
+        }
+    }
+    .stand_out{
+        display:flex;
+        .bloc_image{
+            width:50vw;
+            img{
+                width:50vw;
+                display: block;
+            }
+        }
+        .bloc_texte{
+            width:50%;
+            padding: 10vw 5vw 5vw 10vw;
+            text-align: left;  
+            .lien{
+                text-decoration: underline;
+                text-decoration-color:rgba(254,119,102,0.4);
+                text-decoration-style: solid;
+                text-decoration-thickness:0.4em;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration-color:rgba(254,119,102,1);
+                }
+            }
+        }
+    }
+    .photo_texte{
+        display:flex;
+        .bloc_texte_image1, .bloc_texte_image2{
+            width:50vw;
+            p{
+                width:25vw;
+                margin:auto;
+            }
+        }
+        
+    }
+   
 }
