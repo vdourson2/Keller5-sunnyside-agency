@@ -61,7 +61,7 @@ header{
         font-family:Fraunces, serif;
         font-size:(40/16)*1em;
         color:#24303E;
-    }
+        }
     p{
         font-family:Barlow, serif;
         font-size:1.5em;
@@ -73,7 +73,7 @@ header{
         font-family:Fraunces, serif;
         font-size:1.4em;
         text-transform: uppercase;
-        line-height: 100px;
+        line-height: 6em;
         color:#24303E;
     }
 }
@@ -210,7 +210,6 @@ footer{
             font-family:Barlow, serif;
             width:600px;
             font-size:(18/16)*1em;
-            //margin-top:5px;
             .about, .services, .projects{
                 padding:1vw;
             }
@@ -252,7 +251,7 @@ footer{
         }
         .bloc_texte{
             width:50vw;
-            padding: 10vw 5vw 5vw 10vw;
+            padding: 10vw 5vw 0vw 10vw;
             text-align: left;
             .lien{
                 text-decoration: underline;
@@ -277,7 +276,7 @@ footer{
         }
         .bloc_texte{
             width:50%;
-            padding: 10vw 5vw 5vw 10vw;
+            padding: 10vw 5vw 0vw 10vw;
             text-align: left;  
             .lien{
                 text-decoration: underline;
